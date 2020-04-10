@@ -43,12 +43,12 @@ public class Product {
 	@Column(name="last_updated")
 	private Date updatedOn;
 	
-	@Column(name="created_by")
+	/*@Column(name="created_by")
 	private String createdBy;
 	
 	@Column(name="last_updated_by")
 	private String lastUpdatedBy;
-
+*/
 	@ManyToOne
 	@JoinColumn(name="category_id", nullable=false)
 	private ProductCategory productCategory;
@@ -141,7 +141,7 @@ public class Product {
 		this.productCategory = productCategory;
 	}
 
-	public String getCreatedBy() {
+	/*public String getCreatedBy() {
 		return createdBy;
 	}
 
@@ -155,7 +155,7 @@ public class Product {
 
 	public void setLastUpdatedBy(String lastUpdatedBy) {
 		this.lastUpdatedBy = lastUpdatedBy;
-	}
+	}*/
 
 	@Override
 	public String toString() {

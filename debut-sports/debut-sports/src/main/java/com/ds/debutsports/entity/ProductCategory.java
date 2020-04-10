@@ -14,7 +14,7 @@ import javax.persistence.Table;
 
 
 @Entity
-@Table(name="tbl_category")
+@Table(name="DS_PRODUCT_CATEGORY")
 public class ProductCategory {
 	
 	@Id
@@ -24,7 +24,7 @@ public class ProductCategory {
 	@Column(name="category_name")
 	private String categoryName;
 	
-	@OneToMany(cascade=CascadeType.ALL, mappedBy="category")
+	@OneToMany(cascade=CascadeType.ALL, mappedBy="productCategory")
 	private Set<Product> product;
 
 	public Long getId() {
