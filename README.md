@@ -1,2 +1,2 @@
-# debutSports
+# DebutSports
 Sporting Goods
